@@ -1,0 +1,405 @@
+* {
+
+    font-family: "futura-pt", sans-serif;
+    
+  }
+  body{
+    background-color: #efefef;
+    
+  }
+
+  .header {
+    position: absolute;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 5%;
+    display: flex;
+    font-weight: 700;
+    max-width: 100%;
+    align-items: center;
+    background-color: #eee;
+    justify-content: space-around;
+  }
+  nav {
+    font-weight: 400;
+   
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 650px) {
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 50px;
+      
+    }
+  
+    nav li {
+      padding-bottom: 5px;
+      
+    }
+  }
+  
+  nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+  }
+  
+  @media (max-width: 650px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  }
+  .nav-link{
+    text-decoration: none;
+    color: #707070;
+    margin: 0 3rem;
+    white-space: nowrap;
+    
+  }
+  .nav-link:hover{
+    color: #7090d8;
+  }
+  #header-img{
+    max-width:90px;
+    padding: 10px;
+    margin: 0 15px 0 0;
+  }
+  #title{
+    color: #656565; 
+  }
+  #logo-line{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: .5rem 0;
+  }
+
+
+
+  
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  button,
+  .buttondark {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      -moz-transition: border-color 0.2s ease;
+      -webkit-transition: border-color 0.2s ease;
+      -ms-transition: border-color 0.2s ease;
+      transition: border-color 0.2s ease;
+      background-color: transparent;
+      border: solid 1px !important;
+      border-color: rgba(45, 40, 50, 0.25) !important;
+      border-radius: 3em;
+      color: #656565 !important;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1.2rem;
+      font-weight: 400;
+      height: calc(3em + 2px);
+      line-height: 3em;
+      outline: 0;
+      padding: 0 2em;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      white-space: nowrap;
+  }
+
+      input[type="submit"]:after,
+      input[type="reset"]:after,
+      input[type="button"]:after,
+      buttondark:after,
+      .buttondark:after {
+          -moz-transform: scale(0.25);
+          -webkit-transform: scale(0.25);
+          -ms-transform: scale(0.25);
+          transform: scale(0.25);
+          pointer-events: none;
+          -moz-transition: opacity 0.2s ease, -moz-transform 0.2s ease;
+          -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+          -ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
+          transition: opacity 0.2s ease, transform 0.2s ease;
+          background: #2b232e;
+          border-radius: 3em;
+          content: '';
+          height: 100%;
+          left: 0;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+      }
+
+      input[type="submit"].icon:before,
+      input[type="reset"].icon:before,
+      input[type="button"].icon:before,
+      buttondark.icon:before,
+      .buttondark.icon:before {
+          margin-right: 0.75em;
+      }
+
+      input[type="submit"].fit,
+      input[type="reset"].fit,
+      input[type="button"].fit,
+      buttondark.fit,
+      .buttondark.fit {
+          width: 100%;
+      }
+
+      input[type="submit"].small,
+      input[type="reset"].small,
+      input[type="button"].small,
+      buttondark.small,
+      .buttondark.small {
+          font-size: 0.4em;
+      }
+
+      input[type="submit"].large,
+      input[type="reset"].large,
+      input[type="button"].large,
+      buttondark.large,
+      .buttondark.large {
+          font-size: 0.8em;
+      }
+
+      input[type="submit"].primary,
+      input[type="reset"].primary,
+      input[type="button"].primary,
+      buttondark.primary,
+      .buttondark.primary {
+          background-color: #2b232e;
+          color: #312450 !important;
+      }
+
+          input[type="submit"].primary:after,
+          input[type="reset"].primary:after,
+          input[type="button"].primary:after,
+          buttondark.primary:after,
+          .buttondark.primary:after {
+              display: none;
+          }
+
+      input[type="submit"].disabled, input[type="submit"]:disabled,
+      input[type="reset"].disabled,
+      input[type="reset"]:disabled,
+      input[type="button"].disabled,
+      input[type="button"]:disabled,
+      buttondark.disabled,
+      buttondark:disabled,
+      .buttondark.disabled,
+      .buttondark:disabled {
+          cursor: default;
+          opacity: 0.5;
+          pointer-events: none;
+      }
+
+      input[type="submit"]:hover,
+      input[type="reset"]:hover,
+      input[type="button"]:hover,
+      buttondark:hover,
+      .buttondark:hover {
+          border-color: rgba(45, 40, 50, 0.55) !important;
+      }
+
+          input[type="submit"]:hover:after,
+          input[type="reset"]:hover:after,
+          input[type="button"]:hover:after,
+          buttondark:hover:after,
+          .buttondark:hover:after {
+              opacity: 0.05;
+              -moz-transform: scale(1);
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+          }
+
+          input[type="submit"]:hover:active,
+          input[type="reset"]:hover:active,
+          input[type="button"]:hover:active,
+          buttondark:hover:active,
+          .buttondark:hover:active {
+              border-color: #656565 !important;
+          }
+
+              input[type="submit"]:hover:active:after,
+              input[type="reset"]:hover:active:after,
+              input[type="button"]:hover:active:after,
+              buttondark:hover:active:after,
+              .buttondark:hover:active:after {
+                  opacity: 0.1;
+              }
+
+
+              
+              /* Button */
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  button,
+  .button {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      -moz-transition: border-color 0.2s ease;
+      -webkit-transition: border-color 0.2s ease;
+      -ms-transition: border-color 0.2s ease;
+      transition: border-color 0.2s ease;
+      background-color: transparent;
+      border: solid 1px !important;
+      border-color: rgba(255, 255, 255, 0.15) !important;
+      border-radius: 3em;
+      color: #ffffff !important;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 0.6em;
+      font-weight: bold;
+      height: calc(4.75em + 2px);
+      letter-spacing: 0.25em;
+      line-height: 4.75em;
+      outline: 0;
+      padding: 0 3.75em;
+      position: flex;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      white-space: nowrap;
+  }
+
+      input[type="submit"]:after,
+      input[type="reset"]:after,
+      input[type="button"]:after,
+      button:after,
+      .button:after {
+          -moz-transform: scale(0.25);
+          -webkit-transform: scale(0.25);
+          -ms-transform: scale(0.25);
+          transform: scale(0.25);
+          pointer-events: none;
+          -moz-transition: opacity 0.2s ease, -moz-transform 0.2s ease;
+          -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+          -ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
+          transition: opacity 0.2s ease, transform 0.2s ease;
+          background: #ffffff;
+          border-radius: 3em;
+          content: '';
+          height: 100%;
+          left: 0;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+      }
+
+      input[type="submit"].icon:before,
+      input[type="reset"].icon:before,
+      input[type="button"].icon:before,
+      button.icon:before,
+      .button.icon:before {
+          margin-right: 0.75em;
+      }
+
+      input[type="submit"].fit,
+      input[type="reset"].fit,
+      input[type="button"].fit,
+      button.fit,
+      .button.fit {
+          width: 100%;
+      }
+
+      input[type="submit"].small,
+      input[type="reset"].small,
+      input[type="button"].small,
+      button.small,
+      .button.small {
+          font-size: 0.4em;
+      }
+
+      input[type="submit"].large,
+      input[type="reset"].large,
+      input[type="button"].large,
+      button.large,
+      .button.large {
+          font-size: 0.8em;
+      }
+
+      input[type="submit"].primary,
+      input[type="reset"].primary,
+      input[type="button"].primary,
+      button.primary,
+      .button.primary {
+          background-color: #ffffff;
+          color: #312450 !important;
+      }
+
+          input[type="submit"].primary:after,
+          input[type="reset"].primary:after,
+          input[type="button"].primary:after,
+          button.primary:after,
+          .button.primary:after {
+              display: none;
+          }
+
+      input[type="submit"].disabled, input[type="submit"]:disabled,
+      input[type="reset"].disabled,
+      input[type="reset"]:disabled,
+      input[type="button"].disabled,
+      input[type="button"]:disabled,
+      button.disabled,
+      button:disabled,
+      .button.disabled,
+      .button:disabled {
+          cursor: default;
+          opacity: 0.5;
+          pointer-events: none;
+      }
+
+      input[type="submit"]:hover,
+      input[type="reset"]:hover,
+      input[type="button"]:hover,
+      button:hover,
+      .button:hover {
+          border-color: rgba(255, 255, 255, 0.55) !important;
+      }
+
+          input[type="submit"]:hover:after,
+          input[type="reset"]:hover:after,
+          input[type="button"]:hover:after,
+          button:hover:after,
+          .button:hover:after {
+              opacity: 0.05;
+              -moz-transform: scale(1);
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+          }
+
+          input[type="submit"]:hover:active,
+          input[type="reset"]:hover:active,
+          input[type="button"]:hover:active,
+          button:hover:active,
+          .button:hover:active {
+              border-color: #ffffff !important;
+          }
+
+              input[type="submit"]:hover:active:after,
+              input[type="reset"]:hover:active:after,
+              input[type="button"]:hover:active:after,
+              button:hover:active:after,
+              .button:hover:active:after {
+                  opacity: 0.1;
+              }
