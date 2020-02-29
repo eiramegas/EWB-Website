@@ -17,6 +17,9 @@ h1{
 h2{
     font-size: 1.5rem;
 }
+h4{
+    font-size: 1rem;
+}
 
 body{
     max-width: 100%;
@@ -58,7 +61,7 @@ body{
     margin: 0 .75rem 0 .75rem;
     align-self: center;
     font-weight: 400;
-    transition: 0.5s;
+    transition-duration: 0.5s;
     position: relative;
 }
 .nav-item:hover{
@@ -66,7 +69,7 @@ body{
 }
 .nav-link{
     color: #707070;
-    transition: 0.5s;
+    transition-duration: 0.5s;
     position: relative;
 }
 .nav-link:hover{
@@ -125,6 +128,7 @@ body{
     flex: 0 0 100%;
     overflow-x: hidden;
     margin: 0;
+    
 }
 .contents{
     margin: 2rem 0;
@@ -242,15 +246,42 @@ body{
     height: 90%
 }
 .card-btn{
-    position: absolute;
-    bottom:   0;
-    justify-content: center;
-    justify-self: center;
+ align-self: ;
 }
 footer{
     
     bottom: 0 ;
 }
-.navbar-toggler-icon{
-    color:#707070;
+
+.squareimg{
+    object-fit: cover;
+    height: 8rem;
+    width: 8rem;
+    align-self: center;
+    
+}
+.card-inner{
+    justify-items: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-stuff{
+    justify-items: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+.heightimg{
+    max-height: 5rem;
+    width:auto;
+    padding: .5rem;
+    margin:.5rem 1rem;
+    box-shadow: 0 0 3px 1px #505050;
+    background: #aaa;
+    border-radius: 1em;
+    transition-duration: 1s;
+    position: relative;
+}
+.heightimg:hover{
+    top:-2px;
+    background: #ddd;
 }
