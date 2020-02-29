@@ -1,6 +1,6 @@
 nav, h1, h2, h3, h4 {
     list-style: none;
-    font-family: 'futura-pt';
+    font-family: 'futura-pt', sans-serif;
     color: black;
     text-decoration: none;
     padding: .5rem 0;
@@ -17,21 +17,16 @@ h1{
 h2{
     font-size: 1.5rem;
 }
-ul{
-    list-style-type: circle;
-}
-.nav-link:hover {
-    color: #00A6E4 !important;
-}
+
 body{
     max-width: 100%;
     background: #eee;
 }
 .header{
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
     flex: 0 0 100%;
+    background-color: white;
 }
 #header-logo{
     display: block;
@@ -39,20 +34,9 @@ body{
     width: 150px;
     height: auto;
 }
-#search-bar{
-    justify-content: end;
-}
-.row-content{
-    border-bottom: 1pt solid grey;
-}
-.row-content {
-    padding: .5rem 0;
-    border-bottom: 1px ridge;
-    min-height: 2.5rem;
-}
-.navbar {
-    background-color: rgb(39, 29, 62, .9);
-}
+
+
+
 .tab-content {
     border: 1px solid #DDD;
     border-top: none;
@@ -72,28 +56,69 @@ body{
 }
 .nav-item {
     margin: 0 .75rem 0 .75rem;
+    align-self: center;
+    font-weight: 400;
+    transition: 0.5s;
+    position: relative;
 }
+.nav-item:hover{
+    top: -2px;
+}
+.nav-link{
+    color: #707070;
+    transition: 0.5s;
+    position: relative;
+}
+.nav-link:hover{
+    color: #6080c8;
+    
+}
+#nav-group{
+  justify-self: end;
+}
+
 .logo {
     margin: -.5rem;
 }
 .card{
-    box-shadow: .2rem .2rem rgba(128, 128, 128, 0.76);
+    box-shadow: 1px 1px 5px 1px #959595;
     height: 100%;
+    max-width: 100%;
+    border: none;
+    border-radius: 1rem;
+    background-color: #7090d8;
+    margin: 1rem 1rem 1.5rem 1rem;
+    flex-direction: column;
+    
 }
+.card-title, .card-text{
+    color: white;
+    font-weight: 400;
+    margin-top:1rem;
+}
+.card-header{
+    border:none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: none;
+    padding:0;
+}
+.card-body{
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .btn-link, h5, a {
     color: white;
 }
-div.row-content {
-    border-bottom: 1px solid grey;
-    border-top: 0px;
-}
+
 #carouselButton {
     position: absolute;
     right: 0;
     bottom: 0;
 }
 .site-footer{
-    background-color: #0C2140;
+    background-color: #656565;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -114,13 +139,9 @@ div.row-content {
     flex-direction: column;
     margin-bottom: 1rem;
 }
-.card{
-    display:flex;
-    flex-direction: column;
-    margin-bottom: 1.5rem;
-}
+
 .carousel-background{
-    background-color: #0E2141;
+    background-color: #eee;
     width: 100%;
 }
 
@@ -135,7 +156,7 @@ div.row-content {
     width: 14rem;
 }
 .carousel-indicators li{
-    background-color: #F9A900;
+    background-color: #7090d8;
 }
 .tight{
     margin: 1rem 8rem .3rem 8rem;
@@ -146,13 +167,7 @@ div.row-content {
 .space{
     margin: 0 0 2rem 0;
 }
-.btn-primary{
-    background-color: #00A6E4 ;
-    font-family: 'futura-pt';
-    border: none;
-    box-shadow: 2px 2px lightgrey;
-    font-weight: 400;
-}
+
 .text-link{
     color:black;
     font-family: 'futura-pt', sans-serif;
@@ -163,15 +178,79 @@ div.row-content {
     -webkit-column-break-inside: avoid;
 }
 
-.accordionportrait{
-    max-width: 30%;
-    height: auto;
-    border-block: 10pt red ;
-    box-shadow: 5px 5px #F9A900;
-}
+
 #logotitle{
     margin: 0 2rem;
+    color: #656565;
 }
 #card-section{
-    margin: 2rem 0 0 0;
+    margin: 2rem 0 3rem 0;
+}
+
+.button-round
+ {
+  font-family: 'futura-pt', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.4rem 1.75rem;
+  border: 2px solid #7090d8;
+  color: white;
+  transition: all 0.5s; /* this makes the hover effects smooth */
+  line-height: 1.5rem;
+  background: #7090c8;
+  border-radius: 30px;
+  position: relative; /* this is for the hover effects */
+  top: 0;
+  
+}
+
+
+.button-round:hover {
+  color: white;  
+  border-color: #6080c8;
+  top: -2px;
+  background: #90b0f8;
+
+}
+.button-roundg
+ {
+  font-family: 'futura-pt', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  border: 2px solid #707070;
+  color: white;
+  transition: all 0.5s; /* this makes the hover effects smooth */
+  line-height: 1.5rem;
+  background: #707070;
+  border-radius: 50px;
+  position: relative; /* this is for the hover effects */
+  top: 0;
+}
+
+.button-roundg:hover {
+  color: white; 
+  border-color: #606060;
+  top: -2px;
+  background: #808080;
+}
+.card-grey{
+    background-color: #707070;
+    width:100%;
+    height: 90%
+}
+.card-btn{
+    position: absolute;
+    bottom:   0;
+    justify-content: center;
+    justify-self: center;
+}
+footer{
+    
+    bottom: 0 ;
+}
+.navbar-toggler-icon{
+    color:#707070;
 }

@@ -19,22 +19,22 @@
 <body>
 
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg  mx-auto">
             <h1 id="logotitle">EWB @ UWM</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">X</span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link " href="candidates.html" id="navbarCandidate" role="button">
+            <div class="collapse navbar-collapse" id="nav-group">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html" id="navbarCandidate" role="button">
                             About Us
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="guide.html" role="button">
+                        <a class="nav-link " href="work.html" role="button">
                             Our Work
                         </a>
                     </li>
@@ -43,8 +43,8 @@
                             Get Involved
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="qanda.html">Donate</a>
+                    <li class="nav-item button-round">
+                        <a class="nav-link" style="color: white;" href="donate.html">Donate</a>
                     </li>
                 </ul>
 
@@ -66,7 +66,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="polling.jpg" alt="Breadcrumb Trail Campground" />
+                            <img class="d-block w-100" src="img/image1.jpg" alt="Breadcrumb Trail Campground" />
                             <div class="carousel-caption">
                                 <h3 class="carousel-text">Find out Where to vote</h3>
                                 <p class="d-none d-sm-block carousel-text">Enter your address to find your polling place
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="voting.jpg" alt="React Lake Campground" />
+                            <img class="d-block w-100" src="img/image2.jpg" alt="React Lake Campground" />
                             <div class="carousel-caption">
                                 <h3 class="carousel-text">Why your vote matters</h3>
                                 <p class="d-none d-sm-block carousel-text">Local elections have a direct impact on your
@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="community.jpg" alt="Chrome River Campground" />
+                            <img class="d-block w-100" src="img/image3.jpg" alt="Chrome River Campground" />
                             <div class="carousel-caption">
                                 <h3 class="carousel-text">Creating a Community</h3>
                                 <p class="d-none d-sm-block carousel-text">Find local organizations that share your
@@ -108,9 +108,6 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                    <button class="btn btn-danger btn-sm" id="carouselButton">
-                        <i class="fa fa-pause"></i>
-                    </button>
                 </div>
             </div>
         </div>
@@ -119,75 +116,113 @@
     <!--Candidate Tiles-->
     <div id="card-section">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/Carl Floof.jpg" class="card-img-top" alt="...">
+            <div class="row">
+                <div class="col col-12 col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title text-center">Our Mission</h4>
+                        </div>
                         <div class="card-body">
-                            <h4 class="card-title">Carly Floof</h5>
-                                <p class="card-text"> Carly Floof earned her law degree from Southern Illinois
-                                    University at Carbondale in 1993.
-                                    She has worked as an attorney in Public Defender's office as well as opened her own
-                                    law firm.</p>
+
+                            <img src="img/IMG_0243.JPG" class="card-img-top" alt="...">
+                            <p class="card-text"> Carly Floof earned her law degree from Southern Illinois
+                                University at Carbondale in 1993.
+                                She has worked as an attorney in Public Defender's office as well as opened her own
+                                law firm.</p>
+                            <button class="button-roundg ">Learn More</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/Carl Floof.jpg" class="card-img-top" alt="...">
+                <div class="col col-12 col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title text-center">Latest Work</h4>
+                        </div>
                         <div class="card-body">
-                            <h4 class="card-title">Carly Floof</h5>
-                                <p class="card-text"> Carly Floof earned her law degree from Southern Illinois
-                                    University at Carbondale in 1993.
-                                    She has worked as an attorney in Public Defender's office as well as opened her own
-                                    law firm.</p>
+
+                            <img src="img/20180109_082248.jpg" class="card-img" alt="...">
+                            <p class="card-text"> Carly Floof earned her law degree from Southern Illinois
+                                University at Carbondale in 1993.
+                                She has worked as an attorney in Public Defender's office as well as opened her own
+                                law firm.</p>
+                            <button class="button-roundg">Learn More</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/Hamilton Chonk.jpg" class="card-img-top" alt="...">
+                <div class="col col-12 col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title text-center">Latest Work</h4>
+                        </div>
                         <div class="card-body">
-                            <h4 class="card-title">Hamilton Chonk</h5>
-                                <p class="card-text">A life-long resident of Wisconsin, Hamilton Chonk has 30 years of
-                                    elected experience
-                                    in a range of positions, including as a State Senator and in the House of
-                                    Representatives.</p>
+
+                            <img src="img/20180109_082248.jpg" class="card-img" alt="...">
+                            <p class="card-text"> Carly Floof earned her law degree from Southern Illinois
+                                University at Carbondale in 1993.
+                                She has worked as an attorney in Public Defender's office as well as opened her own
+                                law firm.</p>
+                            <button class="button-roundg">Learn More</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class=" row row-content"></div>
-        </div>
-
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col col-sm-6">
-                    <h2>Registration</h2>
-                    <p>Eligible Wisconsin Voters who have a current and valid Wisconsin Driver License or Wisconsin
-                        State ID Card can now register online!</p>
-                    <a class="text-link" href="https://myvote.wi.gov/en-US/RegisterToVote">REGISTER TO VOTE</a>
+            <div class="row">
+                <div class="col">
+                    <h2></h2>
                 </div>
-         
+            </div>
+            <div class="space"> </div>
 
-                <div class="col col-sm-6">
-                    <h2>Election Deadlines</h2>
-                    <p>Get your information on the voter registration or the absentee voting deadlines for your 2020
-                        Milwaukee Spring Election in April.</p>
-                    <a class="text-link" href="https://myvote.wi.gov/en-us/VoterDeadlines">DEADLINES</a>
+            <div class="row">
+                <div class="col col-12 col-sm-5 ">
+                    <div class="card card-grey mx-auto">
+                        <div class="card-header">
+                            <h4 class="card-title text-center">Run 4 Water</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="card-text">
+                                <li>description</li>
+                                <li>date</li>
+                            </ul>
+                            <button class="button-round">Enter Here</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-12 col-sm-5 ">
+                    <div class="card card-grey mx-auto">
+                        <div class="d-flex">
+                            <div>
+                                <div class="card-header">
+                                    <h4 class="card-title text-center">Get Tickets</h4>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="card-text">
+                                        <li>description</li>
+                                        <li>date</li>
+                                    </ul>
+                                    <button class="button-round ">Learn More</button>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/20180110_080808.jpg"
+                                    class="card-img rounded mx-auto float-center align-self-center">
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     </div>
+
     <div class="space"> </div>
 
-
     <footer class="container-fluid site-footer">
-        <div class="row">
+        <div class=" ml-2 row ">
             <div class="col">
                 <h6 class="footer-txt">Donate to keep this website alive!</h6>
-                <button type="button" class="btn btn-primary btn-lg">Donate</button>
+                <button type="button" class="button-round" href="#" style="color: white;">Donate</button>
             </div>
         </div>
     </footer>
@@ -196,4 +231,5 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="myscripts.js"></script>
 </body>
